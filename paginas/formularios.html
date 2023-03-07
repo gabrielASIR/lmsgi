@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularios de contacto.</title>
+</head>
+<body>
+    <header>
+        <h1>Viajes Valdejalon.</h1><strong>La agencia favorita de tu agencia favorita ;)</strong><br><br>
+        <img src="../imagenes/logo_agencia.png" width="200" height="133">
+    </header><br>
+    <main>
+        <p>Envíanos cualquier duda o sugerencia conectandote a través del siguiente formulario, al email viajesvaldejalon@gmail.com o al 
+            teléfono 999777222.</p>
+        <form action="http://httpbin.org/get" method="get">
+            <fieldset>
+                <legend>INICIO DE SESIÓN</legend>
+                <label for="user">Usuario</label>  <input type="text" id="user" name="user" placeholder="Inserte su nombre de usuario." required><br><br>
+                <label for="pwd">Contraseña</label>  <input type="password" id="pwd" name="pwd" required><br><br>
+                <label for="rec">¿Quiere usted ser recordado?</label>  
+                <label for="rec">Si</label><input type="radio" id="rec" name="rec" value="S">
+                <label for="rec">No</label><input type="radio" id="rec" name="rec" value="N"> <br><br>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Restablecer">
+            </fieldset>
+        </form><br>
+        <p>Para crear un nuevo usuario y así poder contactar con nosotros, por favor rellene el siguiente formulario.</p>
+        <h4>CREAR NUEVO USUARIO.</h4>
+        <form action="http://httpbin.org/get" method="get">
+            <label for="fname">Nombre de usuario</label>  <input type="text" id="fname" name="fname" placeholder="Inserte su nombre de usuario" required><br><br>
+            <label for="mail">Email</label>  <input type="email" id="mail" name="mail" placeholder="ejemplo@gmail.com"><br><br>
+            <label for="pwd">Contraseña</label>  <input type="password" id="pwd" name="pwd" required><br><br>
+            <label for="economia">Tipo de viaje</label> <select name="economia" id="economia">
+                <option value="a">Gama baja</option>
+                <option value="c">Gama media</option>
+                <option value="p">Gama alta</option>
+              </select>
+        <fieldset>
+            <legend>Condiciones legales</legend>
+            <input type="checkbox" id="leido" name="leido" value="Si"><label for="leido">He leído las condiciones legales.</label><br>
+            <input type="radio" id="recibir" name="recibir" value="Si"><label for="recibir">Quiero recibir correos electrónicos con publicidad</label>
+            <input type="radio" id="recibir" name="recibir" value="No"><label for="recibir">No quiero recibir correos electrónicos con publicidad</label>
+        </fieldset>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Restablecer">
+        </form>
+        
+        <p><strong>Si quieres volver a la página principal, pulse en esta hermosa casa :)</strong></p><br>
+        <a href="../index.html"><img src="../imagenes/casa.jpg" height="50" width="50" alt="Botón"><a>
+    </main>
+    <footer>
+        <p>
+            <h4>Asociados con:</h4><br>
+            <img src="../imagenes/footer.jpg" alt="" width="300" height="133"><br>
+            Teléfono de apoyo: <strong>999 777 222</strong> <br>
+            Correo de apoyo: <strong>viajesvaldejalon@gmail.com</strong>
+        </p>
+    </footer>
+</body>
+</html>
